@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borbély</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./pics/icon/scissors-favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="main-page">
+        <header class="header-menu">
+            <div class="item phone">
+                <img src="./pics/icon/phone-solid.svg" alt="telefon-icon">
+                <p>Hívj minket: +36 01 23 45 678</p>
+            </div>
+            <div class="item opening">
+                <img src="./pics/icon/clock-solid.svg" alt="clock-icon">
+                <p>Nyítva: Hétfő-Szombat, 9:00 - 17:00</p>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#"><img src="./pics/logo_edited.png" alt="logó"></a>
+            </div>
+            <div class="nav-elements">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="hamburger">&#9776;</label>
+                <div class="nav-item">
+                    <ul>
+                        <li><a href="#">Galéria</a></li>
+                        <li><a href="#">Árak</a></li>                   
+                        <li><a href="#">Kapcsolatok</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button>Időpont foglalás</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-page-text">
+            <h1>BARBERS & HAIR CUTTING</h1>
+            <P>Látogass el hozzánk, profi borbélyaink állnak segítségedre</P>
+        </div>
+    </section>
+
+    <section class="galery-container">
+        <h2 class="galery-text">Galéria</h2>
+        <div class="carousel" id="carousel">
+            <img class="forward left" id="js-left" src="./pics/icon/chevron-left-solid.svg" alt="nyil balra">
+            <img src="./pics/munkak/Barber.png" alt="borbély">
+            <img src="./pics/munkak/Barber (1).png" alt="borbély">
+            <img src="./pics/munkak/Barber (2).png" alt="borbély">
+            <img src="./pics/munkak/Barber (3).png" alt="borbély">
+            <img src="./pics/munkak/Barber (4).png" alt="borbély">
+            <img src="./pics/munkak/Barber (5).png" alt="borbély">
+            <img src="./pics/munkak/Barber (6).png" alt="borbély">
+            <img class="forward right" id="js-right" src="./pics/icon/chevron-right-solid.svg" alt="nyil jobbra">
+        </div>
+    </section>
+    
+    <section class="price-servise">
+        <h2>Árak és Szolgáltatások</h2>
+        <div class="price-container">
+            <div class="price-cards">
+                <h3 class="service">Haj és szakál vágás</h3>
+                <p class="price">9 500 Ft</p>
+                <p class="time">Várható időtartam: 1 óra</p>
+                <button class="price-button">Időpont foglalás</button>
+            </div>
+            <div class="price-cards">
+                <h3 class="service">Haj vágás szakál igazítás</h3>
+                <p class="price">9 000 FtS</p>
+                <p class="time">Várható időtartam: 45 perc</p>
+                <button class="price-button">Időpont foglalás</button>
+            </div>
+            <div class="price-cards">
+                <h3 class="service">Haj vágás</h3>
+                <p class="price">7 000 Ft</p>
+                <p class="time">Várható időtartam: 30 per</p>
+                <button class="price-button">Időpont foglalás</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="flexbox-container">
+        <section class="nyitva-container">
+            <h2>Nyitvatartás:</h2>
+            <ul class="nyitva">
+                <li>Hétfő 9:00-17:00</li>
+                <li>Kedd 9:00-17:00</li>
+                <li>Szerda 9:00-17:00</li>
+                <li>Csütörtök 9:00-17:00</li>
+                <li>Péntek 9:00-17:00</li>
+                <li>Szombat 9:00-17:00</li>
+                <li>Vasárnap - Szabadnap</li>
+            </ul>
+        </section>
+
+        <section class="kapcsolat">
+            <h2>Vedd fel velünk a kapcsolatot</h2>
+            <form id="contact-form" action="#" method="post" onsubmit="myFunc();">
+                <div class="form-group">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefonszám:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Üzenet:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p>Barber &copy; Copyright 2024. Minden jog fenntartva!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
