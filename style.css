@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #ffc107;
+}
+
+h1, h2, h4, h5, p, label{
+    color: var(--main-color);
+}
+h2{
+    letter-spacing: 5px;
+}
+.main-page{
+    background: linear-gradient( rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url(./pics/main-page.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover; 
+}
+.icon{
+    height: 1rem;
+}
+a:hover{
+    color: yellow !important;
+}
+.logo{
+    width: 200px;
+}
+.md{
+    background-color: var(--main-color);
+}
+.slogen{
+    height: 25vh;
+}
+.text-shadow{
+    text-shadow: 0 0 3px black;
+}
+.font-family{
+    font-family: "Macondo", monospace;
+}
+.page-2{
+    background-color: rgb(10, 10, 10);
+}
+.arrow{
+    width: 30px;
+    height: 60px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.card{
+    background-color: rgb(121, 121, 121);
+}
+.card-p{
+    color: black;
+}
+.form-control{
+    background-color: rgb(121, 121, 121);
+    border: none;
+    outline: none;
+}
+label:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 380px) {
+    .logo{
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogen{
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-left: auto;
+        text-align: end; 
+    }
+    .carousel{
+        width: 600px;
+        margin: 0 auto;
+    }
+    .form{
+        width: 400px;
+    }
+}
